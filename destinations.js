@@ -7,10 +7,10 @@ var destinationData = [
         4: "good",
         5: "good"
     },
-    info: {
+    sources: [{
         source: "wikitravel",
         url: "http://en.wikipedia.org/wiki/Climate_of_Peru"
-    }
+    }]
 },
 {
     name: "Venezuela",

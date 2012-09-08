@@ -61,10 +61,8 @@
 	  			}%>
 	  			>&nbsp;</td>
 	  		<% } %>
-	  		<td><% if (dest.info) {%>
-	  			<a href="<%=dest.url%>"><%=dest.source%></a>
-	  			<%}else{%>
-	  			&nbsp;
+	  		<td><% for (var k=0; k < dest.sources ? dest.sources.length : 0;k++) {%>
+	  			<a href="<%=dest[k].url%>"><%=dest[k].source%></a>
 	  			<%}%>
 	  		</td>
 	    </tr>
