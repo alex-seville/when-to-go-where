@@ -10,8 +10,8 @@
     font-style: normal;
 }
 
-html { position: relative; height: 100%; width: 100%; padding: 0px; margin: 0px; } 
-body { padding: 0px; margin: 0px; font-size: 24px; font-family: forque, sans-serif; color: #eee; }
+html { position: relative; height: 100%; width: 100%; padding: 0; margin: 0; } 
+body { padding: 0 0 40px 0; margin: 0; font-size: 24px; font-family: forque, sans-serif; color: #eee; }
 body { background-attachment: fixed;
 		background-image: linear-gradient(bottom, rgb(46,46,46) 0%, rgb(140,140,137) 100%);
 		background-image: -o-linear-gradient(bottom, rgb(46,46,46) 0%, rgb(140,140,137) 100%);
