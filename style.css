@@ -30,6 +30,7 @@ h1 { padding: 10px; text-align: center; font-size: 72px; color: rgba(255,255,255
 h2 { margin: 5px 0px; text-shadow: 2px 2px 2px rgba(50,50,50,.3); }
 fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px; text-shadow: 2px 2px 2px #444; }
 legend { background-color: #eee; color: #666; padding: 5px; width: 100%; text-shadow: 2px 2px 2px #999; cursor: pointer; }
+legend  .resetFilters { font-size:12px;float:right; }
 .on legend:before { content: "▼ "; }
 .off legend:before { content: "▶ "; }
 .on label { display: block; overflow: hidden; }
@@ -38,36 +39,18 @@ input { float: left; margin-top: 15px; font-size: 40px; }
 
 .forkme { display: block; position: absolute; top: 0; right: 0; border: 0; }
 .criteria { width: 450px; margin: 10px; float: left; overflow: hidden; }
-.engines { padding-top: 5px; overflow: hidden; }
-.engines div { background-color: #f80; padding: 10px; margin: 5px; float: left; text-align: center; }
-.engines a,
-.engines span { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
-.engines span { font-size: 14px; color: #666; }
-.engines a:hover { color: #fff; }
-.remove { -webkit-animation: laterz 1s 0s 1 forwards; -moz-animation: laterz 1s 0s 1 forwards; -o-animation: laterz 1s 0s 1 forwards; }
-.add { -webkit-animation: helloz 1s 0s 1 forwards; -moz-animation: helloz 1s 0s 1 forwards; -o-animation: helloz 1s 0s 1 forwards; }
+.destinations { padding-top: 5px; }
+.destinations tr { background-color: #f80; padding: 10px; margin: 5px;  text-align: center; }
+.destinations .dest-th {width:120px;max-width:120px;}
+.destinations .info-th {width:100px;max-width:100px;}
+.destinations th {width:20px;}
+.destinations tr {height:30px;}
+.destinations .cold { background-color: blue;}
+.destinations .hot { background-color: red;}
+.destinations .good { background-color: green;}
+.destinations a,
+.destinations span { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
+.destinations span { font-size: 14px; color: #666; }
+.destinations a:hover { color: #fff; }
 
-@-webkit-keyframes laterz {
-	from { opacity: 1; }
-	to { opacity: 0; }
-}
-@-webkit-keyframes helloz {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
-@-o-keyframes laterz {
-	from { opacity: 1; }
-	to { opacity: 0; }
-}
-@-o-keyframes helloz {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
-@-moz-keyframes laterz {
-	from { opacity: 1; }
-	to { opacity: 0; }
-}
-@-moz-keyframes helloz {
-	from { opacity: 0; }
-	to { opacity: 1; }
-}
+
