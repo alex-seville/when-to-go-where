@@ -16,15 +16,17 @@ input { float: left; margin-right: 5px!important; margin-left: 5px!important;fon
 /*
 .criteria { width: 300px; margin: 0 10px 10px 10px;  overflow: hidden; }
 */
-.destinations { padding-top: 5px;width:700px;table-layout: fixed; }
+.destinations { padding-top: 5px;width:700px;table-layout: fixed;  }
 .destinations tr {width:700px;height:30px;display:block; }
 .destinations th,td {text-align: center; width:40px;height:30px;}
-.destinations thead {background-color:#eee;}
+.destinations thead {background-color:#eee;height:60px;}
+.destinations tbody {display:block;margin-top:60px;}
 .destinations tbody tr {background-color:#eee;background-position:120px 0;background-size:480px 30px;background-repeat:no-repeat; }
 .destinations tbody td:first-child {background-color:#eee;width:120px;cursor: pointer;}
 .destinations thead th:first-child {width:120px;}
 .destinations thead th:last-child {width:100px;}
 .destinations tbody td:last-child {background-color:#eee;text-align: center;width:100px; }
+
 /*.destinations .cold { background-color: #f3f6f7;}
 .destinations .hot { background-color: #F2DEDE;}
 .destinations .good { background-color: #DFF0D8;}

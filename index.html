@@ -43,7 +43,7 @@
 		</div>
 		<div class="span9">
 		<table class="destinations">
-			<thead>
+			<thead class="affix">
 				<tr>
 					<th class="dest-th">&nbsp;</th>
 					<th><h2>J</h2></th><th><h2>F</h2></th><th><h2>M</h2></th>
@@ -77,20 +77,22 @@
 		  			} 
 		  			if (m) {	
 			  			if (m.indexOf('good')> -1){
-			  				color = '#DFF0D8';
+			  				color = '#51A351';
 			  			}else if (m.indexOf('hot')> -1){
-			  				color = '#F2DEDE';
+			  				color = '#BD362F';
 			  			}else if (m.indexOf('cold')> -1){
 			  				color = '#f3f6f7';
 			  			}else if (m.indexOf('rainy')> -1){
-			  				color = '#d5e1fd';
+			  				color = '#04C';
 			  			}else if (m.indexOf('dry')> -1){
-			  				color = '#FCF8E3';
+			  				color = '#F89406';
+			  			}else if (m.indexOf('humid')> -1){
+			  				color = '#2F96B4';
 			  			}else{
-			  				color = '#eee';
+			  				color = '#E6E6E6';
 			  			}	  					
 			  		}else{
-			  			color = '#eee';	
+			  			color = '#E6E6E6';	
 			  		}
 			  		%>color-stop(<%=per%>%,<%=color%>)<%
 		  		}
