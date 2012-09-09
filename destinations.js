@@ -4,12 +4,12 @@ var destinationData = [
     classes: "sun rain south-america",
     months: {
         0: "rainy",
-        1: "rainy",
-        2: "rainy",
+        1: "rainy low-season",
+        2: "rainy low-season",
         3: "rainy",
-        5: "good",
-        6: "good",
-        7: "good",
+        5: "good high-season",
+        6: "good high-season",
+        7: "good high-season",
         11: "rainy"
     },
     sources: ["http://www.adventure-life.com/peru/peru_faq.php#when_to_go"]
@@ -756,14 +756,14 @@ var destinationData = [
     name: "Canada",
     classes: "north-america",
     months: {
-        0: "cold",
+        0: "cold low-season",
         1: "cold",
         2: "cold",
-        5: "good",
-        6: "hot",
-        7: "good",
-        10: "cold",
-        11: "cold"
+        5: "good high-season",
+        6: "hot high-season",
+        7: "good high-season",
+        10: "cold low-season",
+        11: "cold low-season"
     }
 },
 {

@@ -1,5 +1,5 @@
 //Fill destinations first
-
+destinationData.sort(function(a, b) {return a.name > b.name ? 1 : -1 ;});
 var results = document.getElementById("destList");
 results.innerHTML = tmpl("dest_tmpl", {destinations: destinationData});
 
