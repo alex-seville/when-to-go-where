@@ -3,6 +3,9 @@
 var results = document.getElementById("destList");
 results.innerHTML = tmpl("dest_tmpl", {destinations: destinationData});
 
+//set up the tooltip
+$(".destinations tbody td:not(:last-child,:first-child)").tooltip();
+
 //Then set up filtering
 var chooser = {
 	choices: []

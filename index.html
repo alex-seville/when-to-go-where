@@ -1,8 +1,9 @@
-<!doctype html>
-<html lang="en" dir="ltr">
+<!DOCTYPE html>
+<html lang="en">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>So you want to know when to go where...</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
@@ -34,7 +35,7 @@
 				<label>Rain <input type="radio" name="radLogic" value="rain" /></label>			
 			</fieldset>
 		</div>
-		<table class="destinations">
+		<table class="destinations table">
 			<thead>
 				<tr>
 					<th class="dest-th">&nbsp;</th>
@@ -53,24 +54,26 @@
 	  <% for ( var i = 0; i < destinations.length; i++ ) { %>
 	  	<% var dest = destinations[i]; %>
 	  	<tr class="<%=dest.classes%>">
-	  		<td><%=dest.name%></td>
+	  		<td title="<%=dest.name%>"><%=dest.name%></td>
 	  		<% for (var j=0; j < 12;j++) { %>
-	  			<td
+	  			<td 
 	  			<% if (dest.months[j]) {
-	  				%> class="<%=dest.months[j]%>"><%
-	  			}%>
-	  			>&nbsp;</td>
+	  				%> class="<%=dest.months[j]%>"
+	  				title="<%=dest.months[j]%>">
+	  			<%}%>
+	  			&nbsp;</td>
 	  		<% } %>
-	  		<td>
+	  		<td class="info">
 	  		<% var s = dest.sources ? dest.sources.length : 0; %>
 	  		<% for (var k=0; k < s;k++) {%>
-	  			<a href="<%=dest.sources[k]%>"><%=(k+1)%></a>
+	  			<a target="_blank" href="<%=dest.sources[k]%>"><%=(k+1)%></a>
 	  		<%}%>
 	  		</td>
 	    </tr>
 	  <% } %>
 	</script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 	<script src="destinations.js"></script>
 	<script src="microTemplating.js"></script>
 	<script src="script.js"></script>

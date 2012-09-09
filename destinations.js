@@ -93,16 +93,20 @@ var destinationData = [
     name: "Bolivia",
     classes: "sun south-america",
     months: {
-        0: "good",
-        1: "good",
-        2: "good",
-        3: "good",
-        4: "good",
+        0: "rainy",
+        1: "rainy",
+        2: "rainy",
+        3: "rainy",
+        4: "dry",
+        5: "dry",
+        6: "dry",
+        7: "good",
         8: "good",
-        9: "good",
-        10: "good",
-        11: "good"
-    }
+        9: "dry",
+        10: "rainy",
+        11: "rainy"
+    },
+    sources:["http://www.lonelyplanet.com/bolivia/weather"]
 },
 {
     name: "Argentina",
