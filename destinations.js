@@ -1,41 +1,50 @@
 var destinationData = [
 {
     name: "Peru",
-    classes: "sun south-america",
+    classes: "sun rain south-america",
     months: {
-        3: "good",
-        4: "good",
-        5: "good"
+        0: "rainy",
+        1: "rainy",
+        2: "rainy",
+        3: "rainy",
+        5: "good",
+        6: "good",
+        7: "good",
+        11: "rainy"
     },
-    sources: [{
-        source: "wikitravel",
-        url: "http://en.wikipedia.org/wiki/Climate_of_Peru"
-    }]
+    sources: ["http://www.adventure-life.com/peru/peru_faq.php#when_to_go"]
 },
 {
     name: "Venezuela",
-    classes: "sun south-america",
+    classes: "sun rain south-america",
     months: {
         0: "good",
         1: "good",
         2: "good",
         3: "good",
         4: "good",
+        5: "rainy",
+        6: "rainy",
+        7: "rainy",
+        8: "rainy",
+        9: "rainy",
         10: "good",
         11: "good"
-    }
+    },
+    sources:["http://www.lonelyplanet.com/venezuela/weather"]
 },
 {
     name: "Uruguay",
     classes: "sun south-america",
     months: {
-        3: "good",
-        4: "good",
-        5: "good",
-        6: "good",
-        7: "good",
-        8: "good"
-    }
+        0: "hot",
+        1: "good",
+        6: "cold",
+        7: "cold",
+        8: "cold",
+        11: "good"
+    },
+    sources:["http://www.tripadvisor.co.uk/Travel-g294064-c154172/Uruguay:When.Is.Best.To.Visit.Uruguay.html"]
 },
 {
     name: "Ecuador",
@@ -58,10 +67,16 @@ var destinationData = [
         0: "good",
         1: "good",
         2: "good",
+        4: "cold",
+        5: "cold",
+        6: "cold",
+        7: "cold",
+        8: "cold",
         9: "good",
         10: "good",
         11: "good"
-    }
+    },
+    sources:["http://www.adventure-life.com/chile/chile_faq.php#when_to_go"]
 },
 {
     name: "Brazil",

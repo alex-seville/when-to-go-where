@@ -37,12 +37,12 @@
 		<table class="destinations">
 			<thead>
 				<tr>
-					<th class="dest-th"><h2>Destination</h2></th>
-					<th>J</th><th>F</th><th>M</th>
-					<th>A</th><th>M</th><th>J</th>
-					<th>J</th><th>A</th><th>S</th>
-					<th>O</th><th>N</th><th>D</th>
-					<th class="info-th">info</th>
+					<th class="dest-th">&nbsp;</th>
+					<th><h2>J</h2></th><th><h2>F</h2></th><th><h2>M</h2></th>
+					<th><h2>A</h2></th><th><h2>M</h2></th><th><h2>J</h2></th>
+					<th><h2>J</h2></th><th><h2>A</h2></th><th><h2>S</h2></th>
+					<th><h2>O</h2></th><th><h2>N</h2></th><th><h2>D</h2></th>
+					<th class="info-th"><h2>info</h2></th>
 				</tr>
 			</thead>
 			<tbody id="destList">
@@ -61,9 +61,11 @@
 	  			}%>
 	  			>&nbsp;</td>
 	  		<% } %>
-	  		<td><% for (var k=0; k < dest.sources ? dest.sources.length : 0;k++) {%>
-	  			<a href="<%=dest[k].url%>"><%=dest[k].source%></a>
-	  			<%}%>
+	  		<td>
+	  		<% var s = dest.sources ? dest.sources.length : 0; %>
+	  		<% for (var k=0; k < s;k++) {%>
+	  			<a href="<%=dest.sources[k]%>">(k+1)</a>
+	  		<%}%>
 	  		</td>
 	    </tr>
 	  <% } %>
