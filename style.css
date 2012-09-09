@@ -1,6 +1,6 @@
 
 body {padding-top:40px;}
-h1 {  text-align: center; font-size: 72px;margin-bottom:30px;  }
+h1 {  text-align: center; font-size: 72px;margin-bottom:60px;  }
 fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px;  }
 legend { background-color: #eee; color: #666; padding: 5px;  cursor: pointer; }
 legend  .resetFilters { font-size:12px;float:right; }
@@ -19,6 +19,7 @@ input { float: left; margin-right: 5px!important; margin-left: 5px!important;fon
 .destinations .info {text-align: center;}
 .destinations th {text-align: center; width:20px;}
 .destinations tr {height:30px;}
+.destinations tbody td:first-child {cursor: pointer;}
 .destinations .cold { background-color: #f3f6f7;}
 .destinations .hot { background-color: #F2DEDE;}
 .destinations .good { background-color: #DFF0D8;}
@@ -36,5 +37,9 @@ input { float: left; margin-right: 5px!important; margin-left: 5px!important;fon
 .destinations span { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
 .destinations span { font-size: 14px; color: #666; }
 .destinations a:hover { color: #fff; }
+
+.popup {height:253px;display:block;}
+.popover-content {height:200px;width:200px;}
+.popover-title {text-align: center;}
 
 
