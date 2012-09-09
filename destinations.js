@@ -112,31 +112,48 @@ var destinationData = [
     name: "Argentina",
     classes: "sun south-america",
     months: {
-        1: "good",
-        2: "good",
-        3: "good"
-    }
+        0: "hot humid",
+        1: "hot humid high-season",
+        2: "good high-season",
+        3: "good",
+        4: "good",
+        5: "good",
+        6: "good high-season",
+        9: "good",
+        10: "good",
+        11: "hot humid"
+    },
+    sources:["http://www.lonelyplanet.com/argentina/weather"]
 },
 {
     name: "Algeria",
     classes: "sun africa",
     months: {
+        0: "cold",
+        1: "cold",
+        4: "good",
         5: "good",
-        6: "good"
-    }
+        6: "hot",
+        7: "hot high-season",
+        8: "good"
+    },
+    sources:["http://www.placesonline.com/africa/algeria/when_to_visit.asp"]
 },
 {
     name: "Egypt",
     classes: "sun africa",
     months: {
-        0: "good",
+        0: "cold high-season",
         1: "good",
-        2: "good",
         3: "good",
+        4: "good",
+        7: "hot",
+        8: "hot",
         9: "good",
         10: "good",
-        11: "good"
-    }
+        11: "cold high-season"
+    },
+    sources:["http://www.wordtravels.com/forum/comments.php?DiscussionID=339"]
 },
 {
     name: "Morocco",
@@ -754,7 +771,7 @@ var destinationData = [
 },
 {
     name: "Canada",
-    classes: "north-america",
+    classes: "sun snow rain north-america",
     months: {
         0: "cold low-season",
         1: "cold",
@@ -768,7 +785,7 @@ var destinationData = [
 },
 {
     name: "United States",
-    classes: "north-america",
+    classes: "sun snow rain north-america",
     months: {
         0: "cold",
         1: "cold",

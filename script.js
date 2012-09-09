@@ -44,7 +44,7 @@ $( function () {
         var $criteria = $t.closest(".criteria");
         $criteria.find("fieldset.on" ).addClass("off").removeClass("on");
         $criteria.find("input:checked").attr('checked', false);
-        $( "table.destinations tr").stop().fadeIn();
+        $( "table.destinations tr").stop().show();
         chooser.choices= [];
     });
     $( "div.criteria" ).on( "click", "fieldset:not(.neutral)", function() {
@@ -79,7 +79,7 @@ $( function () {
         }
         if ( !chooser.choices.length ) return;
         classes = chooser.choices.join( "." );
-        $( "table.destinations tbody tr:not(." + classes + ")" ).stop().fadeOut();
-        $( "table.destinations tbody tr." + classes ).stop().fadeIn();
+        $( "table.destinations tbody tr:not(." + classes + ")" ).stop().hide();
+        $( "table.destinations tbody tr." + classes ).stop().show();
     });
 });

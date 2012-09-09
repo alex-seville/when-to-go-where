@@ -1,7 +1,9 @@
 
 body {padding-top:40px;}
 h1 {  text-align: center; font-size: 72px;margin-bottom:60px;  }
+/*
 fieldset { margin: 0px; padding: 0px; overflow: hidden; border: none; padding: 0px 10px 10px;  }
+*/
 legend { background-color: #eee; color: #666; padding: 5px;  cursor: pointer; }
 legend  .resetFilters { font-size:12px;float:right; }
 .on legend:before { content: "▼ "; }
@@ -11,27 +13,28 @@ legend  .resetFilters { font-size:12px;float:right; }
 input { float: left; margin-right: 5px!important; margin-left: 5px!important;font-size: 40px; }
 
 .forkme { display: block; position: absolute; top: 0; right: 0; border: 0; }
-.criteria { width: 300px; margin: 0 10px 10px 10px; float: left; overflow: hidden; }
-.destinations { padding-top: 5px;width: 717px; }
-.destinations tr { background-color:#eee; padding: 10px; margin: 5px;  text-align: center; }
-.destinations .dest-th {width:120px;max-width:120px;}
-.destinations .info-th {width:100px;max-width:100px;}
-.destinations .info {text-align: center;}
-.destinations th {text-align: center; width:20px;}
-.destinations tr {height:30px;}
-.destinations tbody td:first-child {cursor: pointer;}
-.destinations .cold { background-color: #f3f6f7;}
+/*
+.criteria { width: 300px; margin: 0 10px 10px 10px;  overflow: hidden; }
+*/
+.destinations { padding-top: 5px;width:700px;table-layout: fixed; }
+.destinations tr {width:700px;height:30px;display:block; }
+.destinations th,td {text-align: center; width:40px;height:30px;}
+.destinations thead {background-color:#eee;}
+.destinations tbody tr {background-color:#eee;background-position:120px 0;background-size:480px 30px;background-repeat:no-repeat; }
+.destinations tbody td:first-child {background-color:#eee;width:120px;cursor: pointer;}
+.destinations thead th:first-child {width:120px;}
+.destinations thead th:last-child {width:100px;}
+.destinations tbody td:last-child {background-color:#eee;text-align: center;width:100px; }
+/*.destinations .cold { background-color: #f3f6f7;}
 .destinations .hot { background-color: #F2DEDE;}
 .destinations .good { background-color: #DFF0D8;}
 .destinations .rainy { background-color: #d5e1fd;}
-.destinations .dry { background-color: #FCF8E3;}
+.destinations .dry { background-color: #FCF8E3;}*/
 .destinations .high-season {
-    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0.25, green), color-stop(0.25, transparent),color-stop(0.5, transparent),color-stop(0.5,green),color-stop(0.75,green),color-stop(0.75, transparent),to(transparent));
-    background-size: 3px 3px;
+    content:"<i class='icon-circle-arrow-up icon-white'></i>";
 }
 .destinations .low-season {
-    background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0.25, blue), color-stop(0.25, transparent),color-stop(0.5, transparent),color-stop(0.5,blue),color-stop(0.75,blue),color-stop(0.75, transparent),to(transparent));
-    background-size: 3px 3px;
+    content:"<i class='icon-circle-arrow-down'></i>";
 }
 .destinations a,
 .destinations span { font-family: helvetica, arial, sans-serif; color: #ccc; font-size: 16px; }
