@@ -63,40 +63,8 @@
 		<script type="text/html" id="dest_tmpl">
 		  <% for ( var i = 0; i < destinations.length; i++ ) { %>
 		  	<% var dest = destinations[i]; %>
-		  	<tr class="<%=dest.classes%>" style="background-image:
-		  	-webkit-gradient(linear, left top, right top, 
-		  		<%
-		  		var m,per,color,first=true;
-		  		for(var l=0;l<12;l++){
-		  			m = dest.months[l];
-		  			per = (100/12)*l;
-		  			if (first){
-		  				first = false;
-		  			}else{
-		  				%>,<%
-		  			} 
-		  			if (m) {	
-			  			if (m.indexOf('good')> -1){
-			  				color = '#51A351';
-			  			}else if (m.indexOf('hot')> -1){
-			  				color = '#BD362F';
-			  			}else if (m.indexOf('cold')> -1){
-			  				color = '#f3f6f7';
-			  			}else if (m.indexOf('rainy')> -1){
-			  				color = '#04C';
-			  			}else if (m.indexOf('dry')> -1){
-			  				color = '#F89406';
-			  			}else if (m.indexOf('humid')> -1){
-			  				color = '#2F96B4';
-			  			}else{
-			  				color = '#E6E6E6';
-			  			}	  					
-			  		}else{
-			  			color = '#E6E6E6';	
-			  		}
-			  		%>color-stop(<%=per%>%,<%=color%>)<%
-		  		}
-		  		%>);">
+		  	<tr class="<%=dest.classes%>" style="
+		  	<%= destGradient(dest.months) %>">
 		  		<td title="<%=dest.name%>"><%=dest.name%></td>
 		  		<% for (var j=0; j < 12;j++) { %>
 		  			<td 

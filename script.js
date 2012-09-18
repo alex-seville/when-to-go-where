@@ -83,3 +83,55 @@ $( function () {
         $( "table.destinations tbody tr." + classes ).stop().show();
     });
 });
+
+function destGradient(months){
+    var style = "background-image: ";
+    var webKit = "-webkit-gradient(linear, left top, right top,";
+    var linearG = "linear-gradient(left,";
+    var oPrefix = "-o-";
+    var mPrefix = "-moz-";
+    var wkPrefix = "-webkit-";
+    var msPrefix = "-ms-";
+
+    var colorListWk = "";
+    var colorList = "";
+
+    var m,per,color,first=true;
+    for(var l=0;l<12;l++){
+        m = months[l];
+        per = (100/12)*l;
+        if (first){
+            first = false;
+        }else{
+            colorListWk += ",";
+            colorList += ",";
+        }
+        if (m) {
+            if (m.indexOf('good')> -1){
+                color = '#51A351';
+            }else if (m.indexOf('hot')> -1){
+                color = '#BD362F';
+            }else if (m.indexOf('cold')> -1){
+                color = '#f3f6f7';
+            }else if (m.indexOf('rainy')> -1){
+                color = '#04C';
+            }else if (m.indexOf('dry')> -1){
+                color = '#F89406';
+            }else if (m.indexOf('humid')> -1){
+                color = '#2F96B4';
+            }else{
+                color = '#E6E6E6';
+            }
+        }else{
+            color = '#E6E6E6';
+        }
+        colorListWk += "color-stop("+per+"%,"+color+")";
+        colorList += color + " "+per+"%";
+    }
+    var styleReturn = style + webKit + colorListWk + ");";
+    styleReturn += style + oPrefix + linearG + colorList + ");";
+    styleReturn += style + mPrefix + linearG + colorList + ");";
+    styleReturn += style + wkPrefix + linearG + colorList + ");";
+    styleReturn += style + msPrefix + linearG + colorList + ");";
+    return styleReturn;
+}

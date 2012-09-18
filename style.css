@@ -16,7 +16,7 @@ input { float: left; margin-right: 5px!important; margin-left: 5px!important;fon
 /*
 .criteria { width: 300px; margin: 0 10px 10px 10px;  overflow: hidden; }
 */
-.destinations { padding-top: 5px;width:700px;table-layout: fixed;  }
+.destinations { padding-top: 5px;width:700px;margin-bottom:80px;table-layout: fixed;  }
 .destinations tr {width:700px;height:30px;display:block; }
 .destinations th,td {text-align: center; width:40px;height:30px;}
 .destinations thead {background-color:#eee;height:60px;}
