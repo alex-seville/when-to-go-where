@@ -84,11 +84,32 @@
 		    </tr>
 		  <% } %>
 		</script>
+		<div id="welcome" class="modal hide fade">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <h3>When To Go Where</h3>
+  </div>
+  <div class="modal-body">
+    <p>Hi!<br><br> When To Go Where is currently in beta release.  We really need help with data, so please submit any information you have on any destinations.  <br><br>Thanks!</p>
+  </div>
+  <div class="modal-footer">
+    
+    <a href="#" data-dismiss="modal" class="btn btn-primary">Enter</a>
+  </div>
+</div>
+		
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="destinations.js"></script>
 	<script src="microTemplating.js"></script>
 	<script src="script.js"></script>
+	<script>
+	$(document).ready(function(){
+$('#welcome').modal('show');
+
+	})
+	
+	</script>
 	<!-- Start of StatCounter Code for Default Guide -->
 <script type="text/javascript">
 var sc_project=8270902; 
@@ -103,5 +124,6 @@ target="_blank"><img class="statcounter"
 src="http://c.statcounter.com/8270902/0/23210bea/1/"
 alt="tumblr analytics"></a></div></noscript>
 <!-- End of StatCounter Code for Default Guide -->
+
 </body>
 </html>
